@@ -1,9 +1,66 @@
-* {
-   margin: 0;
-   padding: 0;
+body{
+    scrollbar-width: none;
+    background: linear-gradient(270deg, #fa2020, #ff6b6b, #b60000);
+    background-size: 600% 600%;
+    animation: gradiente 10s ease infinite;
 }
 .fundo {
-    background-image: linear-gradient(45deg, grey, black);
-    height: 100vh;
-    color: rgb(0, 0, 0);
+    padding: auto;
+    color: white;
+    background: url(558b468d-36a1-4ee5-a21e-f45c0e1ccd57.png) rgba(0, 0, 0, 0.493);
+    background-size: cover;
+    width: 420px;
+    height: 500px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+}
+#Resultado {
+    z-index: 3;
+    width: all;
+    height: 10px;
+    position: relative;
+    color:white;
+    border-bottom: 1px solid white;
+    padding: 10px;
+}
+#Título {
+    font-family:'Courier New', Courier, monospace;
+    z-index: 3;
+    left: 1%;
+    position: absolute;
+    justify-content: center;
+    position: relative;
+    color: rgb(255, 255, 255);
+}
+footer h1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 3;
+    top: auto;
+    left: 25%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+button {
+    z-index: 3;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.205);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+button:hover {
+    border: none;
+    background-color: #b60000;
+    color: rgb(255, 255, 255);
+}
+@keyframes gradiente {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
 }
